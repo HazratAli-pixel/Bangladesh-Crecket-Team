@@ -27,6 +27,9 @@ document.getElementById('expense').addEventListener('click',()=>{
             alert("Please Add minimum Amount!")
         }
     }
+    else if (count.length == 0){
+        alert("Please Select At leat One Player")
+    }
     else if(isNaN(perPleyer)){
         alert("Please Input Number")
     }
@@ -36,25 +39,26 @@ document.getElementById('expense').addEventListener('click',()=>{
 });
 
 function totalCalucation() {
-    // let total = document.getElementById('total');
-    // total.innerHTML = '1212';
-    // alert('asfdfasdf');
-    if(perPleyer <=0){
-        if (count.length == 0){
-            alert("Please Select At leat One Player")
-        }
-        else{
-            alert("Please Add minimum Amount!")
-        }
-    }
-    else if(isNaN(perPleyer)){
-        alert("Please Input Number")
-    }
-
-
-
     let playerExpense2 = playerExpense.innerHTML;
     let managerFee = document.getElementById('managerFee').value;
     let coachFee = document.getElementById('coachFee').value;
-    total.innerHTML = Number(managerFee)+Number(coachFee)+Number(playerExpense2);
+    let perPleyer = document.getElementById('perplayer').value;
+    if(count.length == 0){
+        alert("Please Select At leat One Player")
+    }
+    else if (perPleyer<=0){
+        alert("Please add Player fees")
+    }
+    else if(coachFee <=0 || managerFee <=0){
+        alert("Please Add CoachFee or Manager Fee")
+    }
+    else if (playerExpense2 <= 0){
+        alert("Please Press the Calculate Button")
+    }
+    else if(isNaN(coachFee) || isNaN(managerFee)){
+        alert("Please Input Number")
+    }
+    else {
+        total.innerHTML = Number(managerFee)+Number(coachFee)+Number(playerExpense2);
+    }
 }

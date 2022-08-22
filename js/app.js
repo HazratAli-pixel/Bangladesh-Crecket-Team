@@ -19,16 +19,12 @@ function addplayer(event){
 
 document.getElementById('expense').addEventListener('click',()=>{
     let perPleyer = document.getElementById('perplayer').value;
-    if(perPleyer <=0){
-        if (count.length == 0){
-            alert("Please Select At leat One Player")
-        }
-        else{
-            alert("Please Add minimum Amount!")
-        }
-    }
-    else if (count.length == 0){
+
+    if (count.length == 0){
         alert("Please Select At leat One Player")
+    }
+    else if(perPleyer <=0){
+        alert("Please add Player fees!")
     }
     else if(isNaN(perPleyer)){
         alert("Please Input Number")

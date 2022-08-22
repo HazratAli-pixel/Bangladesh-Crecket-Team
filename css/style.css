@@ -1,3 +1,30 @@
 .bg-black{
     background-color: black;
 }
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/coverphoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: ColorCng 6s ease-in infinite;
+  }
+  
+  .banner-contentw {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+@keyframes ColorCng {
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+
+    50%{
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    }
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}

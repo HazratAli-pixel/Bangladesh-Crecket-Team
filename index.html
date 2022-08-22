@@ -76,7 +76,7 @@
                         <div class="card m-1">
                             <img src="img/Mehedi-Hasan-Miraz 2.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-black text-white">
-                              <h5 id="name_4" class="card-title text-center">Mehedi-Hasan-Miraz</h5>
+                              <h5 id="name_4" class="card-title text-center">Mehedi Hasan Miraz</h5>
                               <div class="d-flex justify-content-evenly">
                                 <p>1089 Runs</p>
                                 <p class="fw-bold">.</p>
@@ -90,11 +90,11 @@
                         <div class="card m-1">
                             <img src="img/Mustafizur Rahman 2.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-black text-white">
-                              <h5 id="name_5" class="card-title text-center">Mustafizur Rahim/h5>
+                              <h5 id="name_5" class="card-title text-center">Musfiqur Rahim </h5>
                               <div class="d-flex justify-content-evenly">
                                 <p>5235 Runs</p>
                                 <p class="fw-bold">.</p>
-                                <p>82 Match</p>>
+                                <p>82 Match</p>
                               </div>
                               <button id="5" onclick="addplayer(event)" class="form-control btn btn-info">Select</button>
                             </div>
@@ -180,7 +180,7 @@
                                 <p class="fw-bold">.</p>
                                 <p>10 Match</p>
                               </div>
-                              <button id="1" onclick="addplayer(event)" class="form-control btn btn-info">Select</button>
+                              <button id="11" onclick="addplayer(event)" class="form-control btn btn-info">Select</button>
                             </div>
                         </div>
                     </div>
@@ -207,11 +207,7 @@
                         <hr>
                         <div class="player-div ps-3">
                             <ol id="player-list">
-                               <li class="p-1 fs-4">sakib</li> 
-                               <li class="p-1 fs-4">sakib</li> 
-                               <li class="p-1 fs-4">sakib</li> 
-                               <li class="p-1 fs-4">sakib</li> 
-                               <li class="p-1 fs-4">sakib</li> 
+
                             </ol>
                         </div>
                     </div>
@@ -224,22 +220,23 @@
                         <div class="calculation d-flex flex-column">
                             <div class="d-flex justify-content-between p-2">
                                 <label class="col-6" for="">Per Player</label>
-                                <input class="col-5 px-1 text-end" id="perplayer" type="text" value="1000">
+                                <input class="col-5 px-1 text-end" id="perplayer" type="text" value="">
                             </div>
-                            <button class="btn btn-info mt-3 m-2 ">Calculate</button>
+                            <button class="btn btn-info mt-3 m-2" id="expense">Calculate</button>
+                            <!-- <button class="btn btn-info mt-3 m-2" onclick="calculation()">Calculate</button> -->
                             <div class="d-flex p-2 mt-3">
                                 <p class="col-8">Player Expenses</p>
-                                <p id="playerExpense" class="col-4 text-end">4545</p>
+                                <p id="playerExpense" class="col-4 text-end"></p>
                             </div>
                             <div class="d-flex justify-content-between p-2">
                                 <label class="col-6" for="">Manager</label>
-                                <input class="col-5 px-1 text-end" id="manager" type="text" value="1000">
+                                <input class="col-5 px-1 text-end" id="managerFee" type="text" value="">
                             </div>
                             <div class="d-flex justify-content-between p-2">
                                 <label class="col-6" for="">Coach</label>
-                                <input class="col-5 px-1 text-end" id="coach" type="text" value="1000">
+                                <input class="col-5 px-1 text-end" id="coachFee" type="text" value="">
                             </div>
-                            <button id="ctotal" class="btn btn-info m-2 ">Calculate Total</button>
+                            <button id="ctotal" class="btn btn-info m-2 " onclick="totalCalucation()" >Calculate Total</button>
                             <br>
                             <div class="d-flex justify-content-between p-2">
                                 <p class="col-6 ">Total</p>
@@ -275,5 +272,6 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
